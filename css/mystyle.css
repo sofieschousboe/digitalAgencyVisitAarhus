@@ -1,0 +1,17 @@
+/* ---- CSS RESET ---- */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Color variables */
+:root {
+    --petrol: #136772;
+    --black: #131313;
+    --purple: #b889b2;
+    --white: #f3f3f3;
+  }
