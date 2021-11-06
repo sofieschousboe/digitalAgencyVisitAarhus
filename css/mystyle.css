@@ -10,8 +10,11 @@
 
 /* Color variables */
 :root {
-    --petrol: #136772;
-    --black: #131313;
-    --purple: #b889b2;
-    --white: #f3f3f3;
+    --corpblue: #022b52;
+    --corpred: #e70013;
+    --vdkgrey1: #a1a8ad;
+    --vdkgrey2: #ced2d3;
+    --black: #000000;
+    --white: #FFF;
+    --highlight: #FAC5CC;
   }
