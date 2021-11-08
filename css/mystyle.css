@@ -80,6 +80,7 @@ h1 {
 #heroImage {
   display: block;
   margin: 0 auto;
+  /* overflow: hidden; */
 }
 
 .scale-down-top {
@@ -104,14 +105,14 @@ h1 {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
   }
   100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    -webkit-transform: scale(0.28, 0.28);
+            transform: scale(0.28, 0.28);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
   }
 }
 
@@ -185,8 +186,8 @@ h1 {
 }
 
 .slide-top2 {
-	-webkit-animation: slide-top2 0.6s ease-in-out 5s forwards;
-	animation: slide-top2 0.6s ease-in-out 5s forwards;
+	-webkit-animation: slide-top2 0.6s ease-in-out 3.2s forwards;
+	animation: slide-top2 0.6s ease-in-out 3.2s forwards;
 }
 
 @keyframes slide-top2 {
