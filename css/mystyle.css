@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-/* Color variables */
+/* COLOR VARIABLES */
 :root {
   --corpblue: #022b52;
   --corpred: #e70013;
@@ -23,15 +23,17 @@
 @font-face {
   font-family: "Visitdenmark-skrift";
   src: url(../font/Visitdenmark-skrift/VisitDenmark-Regular.otf);
-  src: url(../font/Visitdenmark-skrift/VisitDenmark-Bold.otf);
+  /* src: url(../font/Visitdenmark-skrift/VisitDenmark-Bold.otf); */
 }
 
 html {
+  display: block;
+  margin: 0 auto;
   height: 100vh;
 }
 
 body {
-  font-family: "Visitdenmark-skrift Regular", Verdana, Arial, sans-serif;
+  font-family: "VisitDenmark-Regular", Verdana, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: var(--corpblue);
@@ -43,10 +45,11 @@ p {
 
 h1 {
   display: block;
-  font-family: "Visitdenmark-skrift Bold", Verdana, Arial, sans-serif;
+  /* font-family: "VisitDenmark-Bold", Verdana, Arial, sans-serif; */
   font-size: 22px;
   line-height: 25px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /* ---- LANDING PAGE ---- */
@@ -61,7 +64,7 @@ h1 {
   overflow: hidden;
 }
 
-/* fade in animation */
+/* Fade in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -173,13 +176,14 @@ h1 {
   position: relative;
   bottom: -500px;
   z-index: 99;
+  overflow: hidden;
 }
 
 .landingPageIntroTextContainer button {
   background-color: var(--corpred);
   color: var(--white);
   padding: 7px;
-  font-family: "Visitdenmark-skrift";
+  font-family: "VisitDenmark-Regular";
   letter-spacing: 1px;
   width: 80px;
   margin-top: 30px;
@@ -201,3 +205,74 @@ h1 {
   }
 }
 
+
+
+
+/* ---- SEARCH PAGE ---- */
+#searchPageSection {
+  height: 100vh;
+  overflow: hidden;
+  animation: fadeIn 0.4s;
+}
+
+.searchPageContainer {
+  border-bottom: 1px solid var(--vdkgrey2);
+}
+
+.searchFunctionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem auto;
+  padding: 8px;
+  width: 90%;
+  background-color: rgba(245, 245, 245, 0.5);
+  border-radius: 20px;
+  border: 1px solid var(--vdkgrey2);
+}
+
+.searchFunctionContainer input {
+  background-color: rgba(245, 245, 245, 0.5);;
+  width: 90%;
+  margin-left: 10px;
+  color: var(--corpred);
+  font-size: .75rem;
+  font-family: "VisitDenmark-skrift";
+}
+
+.gridContainerTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";  
+max-width: 600px;
+}
+
+.gridContainer article{
+  border: 1px solid black;
+}
+
+.card  {
+  display: block;
+  height: 80px;
+  width: 40%;
+}
+
+.topAttractions {
+  display: block;
+  background-image: url(../img/attractions.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+}

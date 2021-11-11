@@ -8,10 +8,11 @@
     <meta name="author" content="Sofie Schousboe">
     <link rel="shortcut icon" type="image/svg" href="img/visitdenmark.svg"/>
     <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/script.js" defer></script>
     <title>City Break Planner | FRONTPAGE PAGE</title>
 </head>
 <body>
-    <section id="landingPageSection">
+    <!-- <section id="landingPageSection">
         <div class="landingPageContainer">
             <div id="heroImage" class="scale-down-top">
                 <img src="img/landing_page_background-1591x2394.jpg" alt="Landscape">
@@ -20,12 +21,45 @@
                 <img id="landingPageHeroText" class="slide-top1" src="img/landing_page_hero_text.svg" alt="The City of Smiles - VisitDenmark">
                 <div class="landingPageIntroTextContainer slide-top2">
                     <p><strong>Aarhus</strong> is an unmissable destination with its <strong>forests</strong>, <strong>beaches</strong>, and world class <strong>architecture and art</strong>.</p>
-                    <button>Explore</button> <!-- CHANGE TO <a> TO FRONTPAGE SECTION ID (CHECK STYLING) -->
+                    <button>Explore</button> --> <!-- CHANGE TO <a> TO FRONTPAGE SECTION ID (CHECK STYLING) -->
+                <!--</div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Search page -->
+    <section id="searchPageSection">
+        <div class="searchPageContainer">
+            <div class="searchFunctionContainer">
+                <img class="search_icon" src="img/icons/search.svg">
+                <input id="input_search" type="search" placeholder="Search attractions, restaurants, hotels..." onkeyup="search(this.value)" onsearch="search(this.value)">
+            </div>
+            <!-- Where the search result matches get appended -->
+            <div id="searchResultsContainer"></div>
+        </div>
+        
+        <div class="searchRecentContainer">
+            <h1 class="search">Recent</h1>
+            <div id="grid-recent" class="gridContainer"></div>
+            <!-- Lav indhold i JS, så den kun er synlig hvis der findes indhold til arrayet?? -->
+        </div>
+        <div class="searchTopContainer">
+            <h1>Top</h1>
+            <div class="gridContainerTop">
+                <div class="card topAttractions">
+                    <div class="borderBox">
+                        <p>Attractions</p>
+                    </div>
+                </div>
+                <div class="card topAttractions">
+                    <div class="borderBox">
+                        <p>Attractions</p>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </section>
-
-    <!-- <script src="js/landingpage.js"></script> -->
+    
 </body>
 </html>
