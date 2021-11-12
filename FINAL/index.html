@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to City Break Planner">
+    <meta name="author" content="Sofie Schousboe">
+    <link rel="shortcut icon" type="image/svg" href="img/visitdenmark.svg"/>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>City Break Planner | FRONTPAGE PAGE</title>
+</head>
+<body onhashchange="pageChange()">
+    <!-- tabbar navigation -->
+    <nav class="tabbar">
+        <a href="#explore"><img src="img/icons/home.svg">Explore</a>
+        <a href="#searchPageSection"><img src="img/icons/home.svg">Search</a>  
+        <a href="#like"><img src="img/icons/home.svg">Favorites</a>
+    </nav>
+
+    <!-- pages -->
+    <!-- Landing Page -->
+    <section id="landingPageSection" class="page">
+        <div class="landingPageContainer">
+            <div id="heroImage" class="scale-down-top">
+                <img src="img/landing_page_background-1591x2394.jpg" alt="Landscape">
+            </div>
+            <div class="landingPageTextContainer">
+                <img id="landingPageHeroText" class="slide-top1" src="img/landing_page_hero_text.svg" alt="The City of Smiles - VisitDenmark">
+                <div class="landingPageIntroTextContainer slide-top2">
+                    <p><strong>Aarhus</strong> is an unmissable destination with its <strong>forests</strong>, <strong>beaches</strong>, and world class <strong>architecture and art</strong>.</p>
+                    <a href="#explore">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forside -->
+    <section id="explore" class="page">
+        <h3>Explore Aarhus</h3>
+        <a href="#">Overview</a>
+        <a href="#">Things to do</a>
+        <a href="#">Restaurants</a>
+        <a href="#">Hotels</a>
+
+        <h4>The City</h4>
+        <p>Located right by the sea, bustling Aarhus has so much to offer, whether you are seeking experiences in beautiful nature or a city break including shopping, great food, culture, historic sites and loads of entertainment.</p>
+        <button>Read more</button>
+
+
+    </section>
+
+    <!-- Search page -->
+    <section id="searchPageSection" class="page">
+        <div class="searchPageContainer">
+            <div class="searchFunctionContainer">
+                <img class="search_icon" src="img/icons/search.svg">
+                <input id="input_search" type="search" placeholder="Search attractions, restaurants, hotels..." onkeyup="search(this.value)" onsearch="search(this.value)">
+            </div>
+            <!-- Where the search result matches get appended -->
+            <div id="searchResultsContainer"></div>
+        </div>
+        
+        <div class="searchRecentContainer">
+            <h1>Recent</h1>
+            <div id="grid-recent" class="gridContainer"></div>
+            <!-- Lav indhold i JS, så den kun er synlig hvis der findes indhold til arrayet?? -->
+        </div>
+        <div class="searchTopContainer">
+            <h1>Top</h1>
+            <div class="gridContainerTop">
+                <div class="card topAttractions">
+                    <a class="searchTopLink" href="#">
+                        <div class="borderBox">
+                            <p>Attractions</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card topBeaches">
+                    <a class="searchTopLink" href="#">
+                        <div class="borderBox">
+                            <p>Beaches</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card topCafes">
+                    <a class="searchTopLink" href="#">
+                        <div class="borderBox">
+                            <p>Cafés</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card topHotels">
+                    <a class="searchTopLink" href="#">
+                        <div class="borderBox">
+                            <p>Hotels</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card topMuseums">
+                    <a class="searchTopLink" href="#">
+                        <div class="borderBox">
+                            <p>Museums</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card topRestaurants">
+                    <a class="searchTopLink" href="#">
+                        <div class="borderBox">
+                            <p>Restaurants</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Like siden-->
+    <section id="like" class="page">
+        <h1>UNDER CONSTRUCTION</h1>
+    </section>
+    
+    <!-- SPA functionality  -->
+    <script src="js/spa.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
